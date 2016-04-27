@@ -19,7 +19,7 @@ class MainHandler(tornado.web.RequestHandler):
     
     def convert_file(self, in_name, out_name):
         out_name = os.path.join(tempfile.gettempdir(), out_name)
-        subprocess.call(['collada2gltf', '-f', in_name, '-o', out_name])
+        subprocess.call(['collada2gltf', '-f', in_name, '-o', out_name, '-e'])
         return out_name
     
     def read_file(self, file_path):
