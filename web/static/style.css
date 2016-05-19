@@ -995,6 +995,7 @@
 		button:disabled,
 		.button.disabled,
 		.button:disabled {
+			background-color: #1cb495;
 			opacity: 0.5;
 		}
 
