@@ -40,9 +40,17 @@ class MainHandler(tornado.web.RequestHandler):
         filename, file_content, _ = self.get_file_data()
         
         in_file = self.write_file(file_content)
-        out_file = self.convert_file(in_file.name, self.change_extension(filename))
         
-        response_content = self.read_file(out_file)
+        try:
+            out_file = self.convert_file(in_file.name, self.change_extension(filename))
+            response_content = self.read_file(out_file)
+        except:
+            raise
+        finally:
+            try:
+                os.remove(out_file)
+            except OSError:
+                pass
         
         self.set_header('Content-Type', 'application/octet-stream')
         self.write(response_content)
