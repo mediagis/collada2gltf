@@ -1,14 +1,28 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<link rel="stylesheet" type="text/css" href="style.css">
-</head>
+	<head>
+		<title>Collada 2 glTF</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
 
-<body>
-	<form method="post", action="upload", enctype="multipart/form-data">
-		<input type="file" name="file">
-		<input type="submit" name="Send">
-	</form>
-</body>
-	
+		<!-- Header -->
+			<header id="header">
+				<h1>Collada 2 glTF</h1>
+				<p>This tool converts COLLADA (.dae) models to glTF for use with Cesium.<br />
+				This is analog the <a href="https://cesiumjs.org/convertmodel.html">convertmodel</a> without file size limit.</p>
+			</header>
+
+		<!-- Upload Form -->
+			<form method="post", action="upload", enctype="multipart/form-data" id="upload-form">
+				<input type="file" name="file" >
+				<input type="submit" value="Convert">
+			</form>
+
+		<!-- Scripts -->
+			<script src="main.js"></script>
+
+	</body>
 </html>
