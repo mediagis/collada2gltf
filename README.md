@@ -4,6 +4,7 @@
 
 Web service to convert 3D models from COLLADA to glTF using [COLLADA2GLTF](https://github.com/KhronosGroup/glTF). This is analog the [convertmodel](https://cesiumjs.org/convertmodel.html) without 10 Mb file size limit.
 
+![gltf.png](https://github.com/KhronosGroup/glTF/raw/master/specification/figures/gltf.png)
 
 # How to use this image #
 ## Run a collada2gltf instance ##
