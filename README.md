@@ -21,7 +21,7 @@ COLLADA2GLTF [license](https://github.com/KhronosGroup/glTF/blob/v1.0-draft2/LIC
 
 # Other GIS containers
 
-* Geoserver on Alpine Linux ([link](https://hub.docker.com/r/winsent/geoserver-alpine/))
+* Geoserver on Alpine Linux ([link](https://hub.docker.com/r/winsent/geoserver-docker/))
 * OSM tools ([link](https://hub.docker.com/r/cartography/osmtools/))
 * Nominatim ([link](https://hub.docker.com/r/cartography/nominatim-docker/))
 * OSRM backend ([link](https://hub.docker.com/r/cartography/osrm-backend-docker/))
